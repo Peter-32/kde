@@ -10,7 +10,7 @@ housing = fetch_california_housing()
 m, n = housing.data.shape
 housing_data = pd.DataFrame(housing.data)
 housing_data.columns = ["_" + str(x) for x in housing_data.columns]
-X = housing_data[[0]]
+X = housing_data[["_0"]]
 print(X)
 
 
