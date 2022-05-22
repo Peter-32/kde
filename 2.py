@@ -20,7 +20,7 @@ x = np.linspace(X.min(), X.max(), 1000)
 
 kde = KernelDensity(kernel='gaussian', bandwidth=0.5).fit(X)
 y = kde.score_samples(x)
-sns.kdeplot(data=housing_data, x="_0")
+sns.kdeplot(data=housing_data, x="_0", y="_1")
 plt.show()
 # plt.plot(x, y)
 # X.hist()
